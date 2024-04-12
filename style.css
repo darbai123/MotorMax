@@ -396,12 +396,7 @@ form btn2{
 nav .fas{
     display: none;
 }
-@media only screen and (max-width: 1300px){
-    .header-text{
-        margin-top: 38%;
-        font-size: 20px;
-    }
-}
+
 @media only screen and (max-width: 1040px){
 nav{
     margin-left: 80%;
@@ -422,16 +417,21 @@ nav ul li a:hover{
     font-weight: 750;
 }
 .header-text{
-    margin-top: 22%;
+    position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      color: white;
     font-size: 18px;
 }
 .logo {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100px;
     width: 160px;
-    margin: 10px;
+    margin: 15px;
     margin-top: 5px;
     z-index: 1000; /* Užtikrina, kad logo būtų viršuje kitų elementų */
   }
@@ -456,9 +456,16 @@ nav ul li a:hover{
         font-weight: 750;
     }
     .header-text{
-        margin-top: 27%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        color: white;
+        
         font-size: 18px;
     }
+   
     .about-col-1 img{
         width: 100%;
         min-height: 300px;
@@ -475,7 +482,7 @@ nav ul li a:hover{
             font-size: 18px;
         } 
         .logo {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             height: 80px;
@@ -488,30 +495,37 @@ nav ul li a:hover{
 @media only screen and (max-width: 600px){
 #header{
     background-image: url(Images/sumazinta.jpg);
-    height: 100vh;
+   background-size: cover;
+   background-position: center;
     }
-    
+ 
     .header-text{
-        margin-top: 145%;
-        font-size: 18px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      color: white;
+        
     }
     .header-text h1{
         font-size: 30px     ;
+
     }
     .logo {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         height: 60px;
         width: 100px;
         margin: 10px;
         margin-top: 5px;
-        z-index: 1000; /* Užtikrina, kad logo būtų viršuje kitų elementų */
-      }
-    nav .fas{
+        z-index: 1000;
+    }
+    nav .fas {
         display: block;
         font-size: 30px;
-        color:  #eb3636;
+        color: #eb3636;
         font-weight: 900;
     }
     .fas {
@@ -522,13 +536,13 @@ nav ul li a:hover{
         outline: 3px solid #262626;
         z-index: 5;
       }
-    .container1{
-        margin-left: -15px;
+  
+    nav.active {
+        right: 0;
     }
     nav ul {
         background: #262626;
-        color:#ababab;
-        
+        color: #ababab;
         position: fixed;
         top: 0;
         right: -200px;
@@ -538,21 +552,21 @@ nav ul li a:hover{
         z-index: 6;
         transition: right 0.5s;
     }
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 25px;
         font-size: 16px;
     }
-    nav ul li a{
+    nav ul li a {
         font-size: 16px;
     }
-    nav ul li a:hover{
+    nav ul li a:hover {
         color: white;
         text-decoration: none;
-        font-size: 16px ;
+        font-size: 16px;
         position: relative;
     }
-    nav ul .fas{
+    nav ul .fas {
         position: absolute;
         top: 25px;
         left: 25px;
@@ -579,10 +593,15 @@ nav ul li a:hover{
         
     }
     .about-col-2{
-        font-size: 14px;
+        font-size: 17px;
     }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
     .tab-links{
-        font-size: 16px;
+        font-size: 22px;
         margin-right: 20px;
     }
     .contact-left, .contact-right{
@@ -591,6 +610,11 @@ nav ul li a:hover{
     .copyright{
         font-size: 14px;
     }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 #msg{
     color: #61b752;
@@ -598,7 +622,7 @@ nav ul li a:hover{
     display: block;
 }
 
-@media only screen and (max-width: 450px){
+/* @media only screen and (max-width: 450px){
     .header-text{
         margin-top: 140%;
         font-size: 13px;
@@ -609,4 +633,59 @@ nav ul li a:hover{
         margin-top: 160%;
         font-size: 13px;
     }
-}
+} */
+@media only screen and (max-width: 550px){
+    #header{
+        background-image: url(Images/sumazinta.jpg);
+       background-size: cover;
+       background-position: center;
+       width: 120%;
+        }
+        .copyright{
+            width: 120%;
+        }
+    }
+    @media only screen and (max-width: 440px){
+        #header{
+            background-image: url(Images/sumazinta.jpg);
+           background-size: cover;
+           background-position: center;
+           width: 130%;
+            }
+            .copyright{
+                width: 130%;
+            }
+        }
+        @media only screen and (max-width: 415px){
+            #header{
+                background-image: url(Images/sumazinta.jpg);
+               background-size: cover;
+               background-position: center;
+               width: 140%;
+                }
+                .copyright{
+                    width: 140%;
+                }
+            }
+            @media only screen and (max-width: 370px){
+                #header{
+                    background-image: url(Images/sumazinta.jpg);
+                   background-size: cover;
+                   background-position: center;
+                   width: 150%;
+                    }
+                    .copyright{
+                        width: 150%;
+                    }
+                }
+                @media only screen and (max-width: 340px){
+                    #header{
+                        background-image: url(Images/sumazinta.jpg);
+                       background-size: cover;
+                       background-position: center;
+                       width: 160%;
+                        }
+                        .copyright{
+                            width: 160%;
+                        }
+                    }
