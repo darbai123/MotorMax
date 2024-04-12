@@ -62,10 +62,15 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text{
-    margin-top: 29%;
-    font-size: 25px;
-}
+ .header-text{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 30px;
+      color: white;
+      
+    }
 .header-text h1{
     font-size: 60px;
     margin-left: 20px;
@@ -421,7 +426,7 @@ nav ul li a:hover{
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 10px;
+      padding: 20px;
       color: white;
     font-size: 18px;
 }
@@ -460,7 +465,7 @@ nav ul li a:hover{
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 10px;
+        padding: 20px;
         color: white;
         
         font-size: 18px;
@@ -504,7 +509,7 @@ nav ul li a:hover{
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 10px;
+      padding: 20px;
       color: white;
         
     }
@@ -648,30 +653,7 @@ nav ul li a:hover{
 }
 
 @media only screen and (max-width: 550px){
-    #services .services-list {
-        grid-template-columns: 1fr; 
-        justify-content: center; 
-        margin:0;
-       min-width: 400px;
-       max-width: 400px;
-      }
-    
-      
-      #portfolio .work-list {
-        grid-template-columns: 1fr; /* Make one column */
-        justify-content: center; /* Center align */
-        margin:0;
-        min-width: 440px;
-        max-width: 440px;
-      }
-    
-      
-      #contact .contact-left,
-      #contact .contact-right {
-        margin:0;
-        min-width: 440px;
-        max-width: 440px;
-      }
+   
     #header{
         background-image: url(Images/sumazinta.jpg);
        background-size: cover;
@@ -680,6 +662,9 @@ nav ul li a:hover{
         }
         .copyright{
             width: 120%;
+        }
+        .sub-title{
+          margin-bottom: 15px;
         }
   
       }
