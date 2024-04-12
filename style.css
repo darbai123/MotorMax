@@ -502,6 +502,7 @@ nav ul li a:hover{
     background-image: url(Images/sumazinta.jpg);
    background-size: cover;
    background-position: center;
+   height: 80vh;
     }
  
     .header-text{
@@ -509,7 +510,7 @@ nav ul li a:hover{
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 20px;
+      padding: 40px;
       color: white;
         
     }
@@ -580,6 +581,10 @@ nav ul li a:hover{
     .sub-title{
         font-size: 40px;
     }
+    /* .about-container{
+        position: absolute;
+        top: 10;
+    } */
     .about-col-1 img{
         width: 100%;
         min-height: 300px;
