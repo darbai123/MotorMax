@@ -541,13 +541,13 @@ nav ul li a:hover{
         right: 0;
     }
     nav ul {
-        background: #262626;
+        background: rgba(38, 38, 38);
         color: #ababab;
         position: fixed;
         top: 0;
         right: -200px;
         width: 200px;
-        height: 100vh;
+        height: 150vh;
         padding-top: 50px;
         z-index: 6;
         transition: right 0.5s;
@@ -598,8 +598,10 @@ nav ul li a:hover{
     .container{
         margin-left: auto;
         margin-right: auto;
+        min-width: auto;
+    max-width: auto;
     }
- 
+
     .tab-links{
         font-size: 22px;
         margin-right: 20px;
@@ -622,19 +624,54 @@ nav ul li a:hover{
     display: block;
 }
 
-/* @media only screen and (max-width: 450px){
-    .header-text{
-        margin-top: 140%;
-        font-size: 13px;
+   
+    #services .services-list {
+      grid-template-columns: 1fr; 
+      justify-content: center; 
+      margin-left: auto;
+      margin-right: auto; 
+    }
+  
+    
+    #portfolio .work-list {
+      grid-template-columns: 1fr; /* Make one column */
+      justify-content: center; /* Center align */
+      margin-left: auto;
+      margin-right: auto; 
+    }
+  
+    
+    #contact .contact-left,
+    #contact .contact-right {
+      flex-basis: 100%; /* Take full width */
     }
 }
-@media only screen and (max-width: 400px){
-    .header-text{
-        margin-top: 160%;
-        font-size: 13px;
-    }
-} */
+
 @media only screen and (max-width: 550px){
+    #services .services-list {
+        grid-template-columns: 1fr; 
+        justify-content: center; 
+        margin:0;
+       min-width: 400px;
+       max-width: 400px;
+      }
+    
+      
+      #portfolio .work-list {
+        grid-template-columns: 1fr; /* Make one column */
+        justify-content: center; /* Center align */
+        margin:0;
+        min-width: 440px;
+        max-width: 440px;
+      }
+    
+      
+      #contact .contact-left,
+      #contact .contact-right {
+        margin:0;
+        min-width: 440px;
+        max-width: 440px;
+      }
     #header{
         background-image: url(Images/sumazinta.jpg);
        background-size: cover;
@@ -644,8 +681,11 @@ nav ul li a:hover{
         .copyright{
             width: 120%;
         }
-    }
+  
+      }
+    
     @media only screen and (max-width: 440px){
+       
         #header{
             background-image: url(Images/sumazinta.jpg);
            background-size: cover;
@@ -657,6 +697,7 @@ nav ul li a:hover{
             }
         }
         @media only screen and (max-width: 415px){
+           
             #header{
                 background-image: url(Images/sumazinta.jpg);
                background-size: cover;
@@ -668,6 +709,7 @@ nav ul li a:hover{
                 }
             }
             @media only screen and (max-width: 370px){
+               
                 #header{
                     background-image: url(Images/sumazinta.jpg);
                    background-size: cover;
@@ -679,6 +721,7 @@ nav ul li a:hover{
                     }
                 }
                 @media only screen and (max-width: 340px){
+                   
                     #header{
                         background-image: url(Images/sumazinta.jpg);
                        background-size: cover;
