@@ -20,8 +20,7 @@ body {
     background-image: url(Images/pagrindinis.jpeg);
     background-size: cover;
     background-position: center;
-    height: 70vh;
-    margin-bottom: 30vh;
+    margin-bottom: 0;
 }
 .container {
 padding: 10px 10%;
@@ -33,6 +32,8 @@ nav{
     flex-wrap: wrap;
 }
 .logo {
+    position: relative;
+    right: 100px;
     width: 180px;
     height: 100px;
 }
@@ -47,6 +48,7 @@ nav ul li a{
     font-size: 20px ;
     position: relative;
     font-weight: 750;
+    left: 100px;
 }
 nav ul li a::after{
     content: '';
@@ -65,7 +67,6 @@ nav ul li a:hover::after{
  .header-text{
       position: absolute;
       bottom: 0;
-      left: 0;
       right: 0;
       padding: 30px;
       color: white;
@@ -89,7 +90,7 @@ nav ul li a:hover::after{
 /*------------about---------*/
 
 #about {
-    padding: 80px 0;
+    padding:  0;
     color: #ababab;
 }
 .row{
@@ -149,6 +150,8 @@ nav ul li a:hover::after{
     width: 50%;
 }
 .tab-contents ul li {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 10px 0 ;
     color: black;
@@ -163,7 +166,10 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-
+.tab-contents ul li span .nuolaida{
+    display: flex;
+    justify-content: end;
+}
 /*-----------services-----------*/
 
 #services{
@@ -381,7 +387,6 @@ form btn2{
     cursor: pointer;
 }
 .copyright{
-    width: 100;
     text-align: center;
     padding: 25px;
     background: #262626;
@@ -404,8 +409,7 @@ nav .fas{
 
 @media only screen and (max-width: 1040px){
 nav{
-    margin-left: 80%;
-    margin-right: 20%;
+    margin-left: 73%;
 }
 nav ul li a{
     color: white;
@@ -424,11 +428,13 @@ nav ul li a:hover{
 .header-text{
     position: absolute;
       bottom: 0;
-      left: 0;
+      color: black;
       right: 0;
       padding: 20px;
-      color: white;
     font-size: 18px;
+}
+.header-text h1 .max{
+    color: black;
 }
 .logo {
     position: absolute;
@@ -441,293 +447,14 @@ nav ul li a:hover{
     z-index: 1000; /* Užtikrina, kad logo būtų viršuje kitų elementų */
   }
 }
-@media only screen and (max-width: 900px){
-    nav{
-        margin-left: 75%;
-        margin-right: 25%;
-    }
-    nav ul li a{
-        color: white;
-        text-decoration: none;
-        font-size: 25px ;
-        position: relative;
-        font-weight: 750;
-    }
-    nav ul li a:hover{
-        color: black;
-        text-decoration: none;
-        font-size: 25px ;
-        position: relative;
-        font-weight: 750;
-    }
-    .header-text{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 20px;
-        color: white;
-        
-        font-size: 18px;
-    }
-   
-    .about-col-1 img{
-        width: 100%;
-        min-height: 300px;
-        max-height: 300px;
-        min-width: 600px;
-        max-width: 600px;
-        border-radius: 15px;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    @media only screen and (max-width: 750px){
-        .header-text{
-            margin-top: 33%;
-            font-size: 18px;
-        } 
-        .logo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 80px;
-            width: 140px;
-            margin: 10px;
-            margin-top: 5px;
-            z-index: 1000; /* Užtikrina, kad logo būtų viršuje kitų elementų */
-          }
-    }
-@media only screen and (max-width: 600px){
-#header{
-    background-image: url(Images/sumazinta.jpg);
-   background-size: cover;
-   background-position: center;
-   
-    }
- 
-    .header-text{
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 10px;
-      
-        
-    }
-    .header-text h1{
-        font-size: 30px     ;
 
-    }
-    .logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 60px;
-        width: 100px;
-        margin: 10px;
-        margin-top: 5px;
-        z-index: 1000;
-    }
-    nav .fas {
-        display: block;
-        font-size: 30px;
-        color: #eb3636;
-        font-weight: 900;
-    }
-    .fas {
-        position: fixed; /* Absoliuti pozicija, kad ikonos būtų viršuje */
-        top: 15px; /* Atstumas nuo viršaus */
-        right: 15px; /* Atstumas nuo kairės */
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-        outline: 3px solid #262626;
-        z-index: 5;
-      }
-  
-    nav.active {
-        right: 0;
-    }
-    nav ul {
-        background: rgba(38, 38, 38);
-        color: #ababab;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 150vh;
-        padding-top: 50px;
-        z-index: 6;
-        transition: right 0.5s;
-    }
-    nav ul li {
-        display: block;
-        margin: 30px;
-        font-size: 20px;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    nav ul li a:hover {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        position: relative;
-    }
-    nav ul .fas {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-    .sub-title{
-        font-size: 40px;
-    }
-    /* .about-container{
-        position: absolute;
-        top: 10;
-    } */
-    .about-col-1 img{
-        width: 100%;
-        min-height: 300px;
-        max-height: 300px;
-        min-width: 400px;
-        max-width: 400px;
-        border-radius: 15px;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
-    }
-    .about-col-1{
-        margin-bottom: 30px;
-        
-    }
-    .tab-contents ul li span{
-        font-size: 20px;
-    }
-    .tab-contents ul li{
-        font-size: 17px;
-    }
-    .about-col-2{
-        font-size: 17px;
-    }
-    .container{
-        margin-left: auto;
-        margin-right: auto;
-        min-width: auto;
-    max-width: auto;
-    }
-
-    .tab-links{
-        font-size: 22px;
-        margin-right: 20px;
-    }
-    .pasiulymai{
-        font-size:16px ;
-    }
-    .contact-left, .contact-right{
-        flex-basis: 100%;
-    }
-    .copyright{
-        font-size: 14px;
-    }
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media only screen and (max-width: 800px){
+    #header {
+        width: 150%;
+        height: 100vh;
+        background-image: url(Images/pagrindinis.jpeg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 0;
     }
 }
-#msg{
-    color: #61b752;
-    margin-top: 10px;
-    display: block;
-}
-
-   
-    #services .services-list {
-      grid-template-columns: 1fr; 
-      justify-content: center; 
-      margin-left: auto;
-      margin-right: auto; 
-    }
-  
-    
-    #portfolio .work-list {
-      grid-template-columns: 1fr; /* Make one column */
-      justify-content: center; /* Center align */
-      margin-left: auto;
-      margin-right: auto; 
-    }
-  
-    
-    #contact .contact-left,
-    #contact .contact-right {
-      flex-basis: 100%; /* Take full width */
-    }
-}
-
-@media only screen and (max-width: 550px){
-   
-    #header{
-        background-image: url(Images/sumazinta.jpg);
-       background-size: cover;
-       background-position: center;
-       width: 120%;
-        }
-        .copyright{
-            width: 120%;
-        }
-        .sub-title{
-          margin-bottom: 15px;
-        }
-       
-      }
-    
-    @media only screen and (max-width: 440px){
-       
-        #header{
-            background-image: url(Images/sumazinta.jpg);
-           background-size: cover;
-           background-position: center;
-           width: 130%;
-            }
-            .copyright{
-                width: 130%;
-            }
-        }
-        @media only screen and (max-width: 415px){
-           
-            #header{
-                background-image: url(Images/sumazinta.jpg);
-               background-size: cover;
-               background-position: center;
-               width: 140%;
-                }
-                .copyright{
-                    width: 140%;
-                }
-            }
-            @media only screen and (max-width: 370px){
-               
-                #header{
-                    background-image: url(Images/sumazinta.jpg);
-                   background-size: cover;
-                   background-position: center;
-                   width: 150%;
-                    }
-                    .copyright{
-                        width: 150%;
-                    }
-                }
-                @media only screen and (max-width: 340px){
-                   
-                    #header{
-                        background-image: url(Images/sumazinta.jpg);
-                       background-size: cover;
-                       background-position: center;
-                       width: 160%;
-                        }
-                        .copyright{
-                            width: 160%;
-                        }
-                    }
