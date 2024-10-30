@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio Website</title>
+  <title>MotorMax</title>
   <script src="https://kit.fontawesome.com/066f3cdf1b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
+<div id="pagrindinis">
   <div class="container">
     <nav>
       <img src="Images/motormaxlogo.png" class="logo" id="logo">
-      <ul id="sidemenu">
-        <li><a href="#header">Pagrindinis</a></li>
-        <li><a href="#about">Apie</a></li>
-        <li><a href="#services">Siūlome</a></li>
-        <li><a href="#portfolio">Kainoraštis</a></li>
-        <li><a href="#contact">Kontaktai</a></li>
+      <ul id="sidemenu" class="sidemenu">
+        <li><a href="#pagrindinis">Pagrindinis</a></li>
+        <li><a href="#apie">Apie</a></li>
+        <li><a href="#siūlome">Siūlome</a></li>
+        <li><a href="#kainoraštis">Kainoraštis</a></li>
+        <li><a href="#kontaktai">Kontaktai</a></li>
         <i class="fas fa-times" onclick="closemenu()"></i>
       </ul>
       <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -26,7 +26,7 @@
     </nav>
     <div class="header-text">
       
-      <h1>Motor<span class="max">Max</span><br></h1>
+      <h1 class="main-name">Motor<span class="max">Max</span><br></h1>
       <h4>Elektrinės gatvė 8 Vilnius<br></h4>
       <h3 class="romeniski-skaiciai">Pirmadienis - šeštadienis</h3><h4 class="romeniska-linija"> 9.30-20.00<br></h4>
       <h4>+370 669 90979</h4>
@@ -36,7 +36,7 @@
 <br>
 <br>
 <!------------about--------->
-<div id="about">
+<div id="apie">
   <div class="container about-container">
     <div class="row">
       <div class="about-col-1">
@@ -67,8 +67,8 @@
        
         <div class="tab-contents" id="education">
           <ul>
-            <li>Automobilio važiuoklės remontui suteikiama <span class="nuolaida">NUOLAIDA 15%</span></li>
-            <li>Visų ratų keitimas <span class="nuolaida">NUO 34€</span></li>
+            <li class="akcija">Automobilio važiuoklės remontui suteikiama <span class="nuolaida">NUOLAIDA 15%</span></li>
+            <li  class="akcija">Visų ratų keitimas <span class="nuolaida">NUO 34€</span></li>
             
           </ul>
         </div>
@@ -78,7 +78,7 @@
 </div>
 
 <!---------services-->
-<div id="services">
+<div id="siūlome">
   <div class="container">
     <h1 class="sub-title">MotorMax siūlo</h1>
     <div class="services-list container1">
@@ -112,7 +112,7 @@
 
 <!-------portfolio--------------->
 
-<div id="portfolio">
+<div id="kainoraštis">
   <div class="container kainorastis container2">
     <h1 class="sub-title">Kainoraštis</h1>
     
@@ -185,7 +185,7 @@
 
 <!--------contact--------->
 
-<div id="contact">
+<div id="kontaktai">
   <div class="container container3">
     <div class="row">
       <div class="contact-left">
