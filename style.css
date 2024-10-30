@@ -506,19 +506,7 @@ nav ul li a:hover{
      .tab-contents{
        width: 300px;
      }
-     /* .tab-contents ul li {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        margin: 10px 0 ;
-        color: black;
-    }
-    .tab-contents ul li span {
-        color: white;
-        font-size: 16px;
-        position: absolute;
-        right: 10px;
-    } */
+
 }
 @media only screen and (max-width: 670px){
     nav{
@@ -575,19 +563,7 @@ nav ul li a:hover{
      .tab-contents{
        width: 200px;
      }
-     /* .tab-contents ul li {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        margin: 10px 0 ;
-        color: black;
-    }
-    .tab-contents ul li span {
-        color: white;
-        font-size: 16px;
-        position: absolute;
-        right: 10px;
-    } */
+  
 }
 @media only screen and (max-width: 600px){
     #pagrindinis{
@@ -669,6 +645,37 @@ nav ul li a:hover{
     }
     
 @media only screen and (max-width: 400px){
-
+    #pagrindinis{
+        background-image: url(Images/sumazinta.jpg);
+        width: 400px;    
+    }
+    nav .fas{
+        color: white;
+        background: rgb(95, 81, 81);
+        border: 3px solid white;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    .copyright{
+        width: 400px;
+    }
 }
-
+@media only screen and (max-width: 320px){
+    #pagrindinis{
+        background-image: url(Images/sumazinta.jpg);
+        width: 360px;    
+    }
+    .about-col-1 img{
+        width: 300px;
+        }
+        .main-name{
+            position: absolute;
+            left: 18px;
+            margin-bottom: 20px;
+        }
+        .tab-contents{
+            width: 160px;
+          }
+}
