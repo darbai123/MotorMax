@@ -664,7 +664,7 @@ nav ul li a:hover{
 }
 @media only screen and (max-width: 320px){
     #pagrindinis{
-        background-image: url(Images/pc.jpg);
+        background-image: url(Images/tel.jpg);
         width: 360px;    
     }
     .about-col-1 img{
